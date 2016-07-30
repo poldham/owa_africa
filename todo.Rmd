@@ -1,0 +1,9 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+1. Get started with RStudio
+2. Tableau and what we need to do - how to use the hyperlinks. 
+3. Template for the reporting
+4. Excel table
