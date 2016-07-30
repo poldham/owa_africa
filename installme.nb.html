@@ -170,17 +170,14 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>This document walks you through the tools we need and the tasks that we will be performing for the Africa project work.</p>
-</div>
-<div id="software-we-will-normally-use." class="section level1">
-<h1>Software we will normally use.</h1>
+<p>This document walks you through the tools we need to install for the Africa project work. # Software we will normally use.</p>
 <p>Make sure that you have copies of the following installed.</p>
 <div id="excel" class="section level3">
 <h3>1. Excel</h3>
 </div>
 <div id="chrome-web-browser" class="section level3">
 <h3>2. Chrome web browser</h3>
-<p>Up to you but Chrome is good</p>
+<p>Up to you which browser you use but Chrome is good for copying URLs.</p>
 </div>
 <div id="tableau-public" class="section level3">
 <h3>3. **Tableau public</h3>
@@ -189,8 +186,11 @@ $(document).ready(function () {
 </div>
 <div id="gephi-0.8.2." class="section level3">
 <h3>4. Gephi 0.8.2.</h3>
-<p>This is network visualization software. The latest version is 0.9.1 but we are using an earlier version 0.8.2.GO HERE.</p>
-<p>Gephi 8.2 is famously annoying because it requires a particular version of Java. When you open Gephi 8.2 you should see a Welcome pane and then an example network. If Gephi 8.2 does not open or you see a grey pane then you should follow these <a href="https://github.com/poldham/opensource-patent-analytics/blob/master/6_workshop_presentations/gephi_installation.pdf">instructions</a>. You can download the instructions as a pdf file from <a href="https://github.com/poldham/opensource-patent-analytics/raw/master/6_workshop_presentations/gephi_installation.pdf">here</a></p>
+<p>This is network visualization software. The latest version is 0.9.1 but we are using an earlier version 0.8.2.</p>
+<p>Download it for either Windows or Mac from:</p>
+<p><a href="https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.setup.exe">Windows</a>: <a href="https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.setup.exe" class="uri">https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.setup.exe</a></p>
+<p><a href="https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.dmg">Mac</a>: <a href="https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.dmg" class="uri">https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.dmg</a></p>
+<p>Gephi 8.2 is famously frustrating because it requires a particular version of Java. When you open Gephi 8.2 you should see a Welcome pane and then an example network. If Gephi 8.2 does not open or you see a grey pane then you should follow these <a href="https://github.com/poldham/opensource-patent-analytics/blob/master/6_workshop_presentations/gephi_installation.pdf">instructions</a>. You can download the instructions as a pdf file from <a href="https://github.com/poldham/opensource-patent-analytics/raw/master/6_workshop_presentations/gephi_installation.pdf">here</a></p>
 </div>
 <div id="rstudio." class="section level3">
 <h3>5. RStudio.</h3>
@@ -198,6 +198,38 @@ $(document).ready(function () {
 <p>We will use the Preview version of RStudio that allows us to easily create notebooks and websites and electronic books.</p>
 <p>First, download the latest version of R from <a href="http://cran.rstudio.com/">here</a>. Look for a line that says RStudio requires with <code>here</code> at the end. Note that you must install R first (and then RStudio provides the interface to R).</p>
 <p>Second, download and install the Preview release of RStudio from <a href="https://www.rstudio.com/products/rstudio/download/preview/">here</a></p>
+<p>R and RStudio work using packages. To install those packages in the <code>Console</code> copy and paste the following code and then have a cup of tea while you wait for the packages to install.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin -->
+<pre class="r"><code>install.packages(&quot;magrittr&quot;)
+install.packages(&quot;plyr&quot;)
+install.packages(&quot;dplyr&quot;)
+install.packages(&quot;tidyr&quot;)
+install.packages(&quot;stringr&quot;)
+install.packages(&quot;Hmisc&quot;)
+install.packages(&quot;httr&quot;)
+install.packages(&quot;rcrossref&quot;)
+install.packages(&quot;fulltext&quot;)
+install.packages(&quot;rplos&quot;)
+install.packages(&quot;ggplot2&quot;)
+install.packages(&quot;jsonlite&quot;)
+install.packages(&quot;knitr&quot;)
+install.packages(&quot;rmarkdown&quot;)
+install.packages(&quot;readr&quot;)
+install.packages(&quot;plotly&quot;)
+install.packages(&quot;ggmap&quot;)
+install.packages(&quot;leaflet&quot;)
+install.packages(&quot;httr&quot;)
+install.packages(&quot;devtools&quot;)
+install.packages(&quot;bookdown&quot;)
+install.packages(&quot;readxl&quot;)
+install.packages(&quot;RCurl&quot;)
+install.packages(&quot;rgbif&quot;)
+install.packages(&quot;taxize&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 </div>
 <div id="github." class="section level3">
 <h3>6. Github.</h3>
@@ -206,12 +238,16 @@ $(document).ready(function () {
 </div>
 <div id="evernote." class="section level3">
 <h3>7. Evernote.</h3>
-<p>Nice to have. We often end up browsing the web to look things up and we might want to save the web links or the data on the page. I use a free Evernote account with a browser plugin for saving pages and notes. It has some limitations in terms of exporting files but can be very useful for saving files to look up later.</p>
+<p>Nice to have. We often end up browsing the web to look things up and we might want to save the web links or the data on the page. I use a free Evernote account with a browser plugin for saving pages and notes. It has some limitations in terms of exporting files but can be very useful for saving files to look up later. Get a free version <a href="https://evernote.com/?var=1">here</a>. You might want to consider other tools such as Zotero.</p>
+</div>
+<div id="mendeley" class="section level3">
+<h3>8. Mendeley</h3>
+<p>We will need some bibliographic software at some point and Mendeley is pretty good. Sign up for an account and also download the plugin for word.</p>
 <!-- rnb-text-end -->
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQWZyaWNhIFNwZWNpZXMgUmV2aWV3IEluc3RydWN0aW9ucyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBJbnRyb2R1Y3Rpb24KClRoaXMgZG9jdW1lbnQgd2Fsa3MgeW91IHRocm91Z2ggdGhlIHRvb2xzIHdlIG5lZWQgYW5kIHRoZSB0YXNrcyB0aGF0IHdlIHdpbGwgYmUgcGVyZm9ybWluZyBmb3IgdGhlIEFmcmljYSBwcm9qZWN0IHdvcmsuIAoKIyBTb2Z0d2FyZSB3ZSB3aWxsIG5vcm1hbGx5IHVzZS4gCgpNYWtlIHN1cmUgdGhhdCB5b3UgaGF2ZSBjb3BpZXMgb2YgdGhlIGZvbGxvd2luZyBpbnN0YWxsZWQuIAoKIyMjMS4gRXhjZWwKCiMjIzIuIENocm9tZSB3ZWIgYnJvd3NlciAKVXAgdG8geW91IGJ1dCBDaHJvbWUgaXMgZ29vZAoKIyMjMy4gKipUYWJsZWF1IHB1YmxpYyAKClNpZ24gdXAgYW5kIGRvd25sb2FkIGl0IGZyb20gW2hlcmVdKGh0dHBzOi8vcHVibGljLnRhYmxlYXUuY29tL3MvKQoKVGhlIG1haW4gcHJvamVjdCB0YWJsZWF1IHdvcmtib29rcyBhcmUgW2hlcmVdKGh0dHA6Ly9wdWJsaWMudGFibGVhdS5jb20vcHJvZmlsZS9wb2xkaGFtIyEvKS4gCgojIyM0LiBHZXBoaSAwLjguMi4gCgpUaGlzIGlzIG5ldHdvcmsgdmlzdWFsaXphdGlvbiBzb2Z0d2FyZS4gVGhlIGxhdGVzdCB2ZXJzaW9uIGlzIDAuOS4xIGJ1dCB3ZSBhcmUgdXNpbmcgYW4gZWFybGllciB2ZXJzaW9uIDAuOC4yLkdPIEhFUkUuIAoKR2VwaGkgOC4yIGlzIGZhbW91c2x5IGFubm95aW5nIGJlY2F1c2UgaXQgcmVxdWlyZXMgYSBwYXJ0aWN1bGFyIHZlcnNpb24gb2YgSmF2YS4gV2hlbiB5b3Ugb3BlbiBHZXBoaSA4LjIgeW91IHNob3VsZCBzZWUgYSBXZWxjb21lIHBhbmUgYW5kIHRoZW4gYW4gZXhhbXBsZSBuZXR3b3JrLiBJZiBHZXBoaSA4LjIgZG9lcyBub3Qgb3BlbiBvciB5b3Ugc2VlIGEgZ3JleSBwYW5lIHRoZW4geW91IHNob3VsZCBmb2xsb3cgdGhlc2UgW2luc3RydWN0aW9uc10oaHR0cHM6Ly9naXRodWIuY29tL3BvbGRoYW0vb3BlbnNvdXJjZS1wYXRlbnQtYW5hbHl0aWNzL2Jsb2IvbWFzdGVyLzZfd29ya3Nob3BfcHJlc2VudGF0aW9ucy9nZXBoaV9pbnN0YWxsYXRpb24ucGRmKS4gWW91IGNhbiBkb3dubG9hZCB0aGUgaW5zdHJ1Y3Rpb25zIGFzIGEgcGRmIGZpbGUgZnJvbSBbaGVyZV0oaHR0cHM6Ly9naXRodWIuY29tL3BvbGRoYW0vb3BlbnNvdXJjZS1wYXRlbnQtYW5hbHl0aWNzL3Jhdy9tYXN0ZXIvNl93b3Jrc2hvcF9wcmVzZW50YXRpb25zL2dlcGhpX2luc3RhbGxhdGlvbi5wZGYpCgojIyM1LiBSU3R1ZGlvLiAKCldlIHVzZSBSc3R1ZGlvIHRvIGFjY2VzcyBBUElzLCBmb3IgZGF0YSBwcm9jZXNzaW5nIGFuZCBmb3IgcHVibGlzaGluZyByZXN1bHRzLiBUaGUgcmVhc29uIHdlIGRvIHRoaXMgaXMgYmVjYXVzZSBpdCBhbGxvd3MgdXMgdG8gcHVibGlzaCBpbiBtdWx0aXBsZSBmb3JtYXRzIChodG1sLCB3b3JkIGFuZCBwZGYpIGFuZCBpdCBpcyBzdXBlciBjb29sIGZvciBxdWlja2x5IHBvc3RpbmcgYSBwcm9qZWN0IHdlYnNpdGUgdG8gR2l0aHViIGFuZCBzbyBvbi4KCldlIHdpbGwgdXNlIHRoZSBQcmV2aWV3IHZlcnNpb24gb2YgUlN0dWRpbyB0aGF0IGFsbG93cyB1cyB0byBlYXNpbHkgY3JlYXRlIG5vdGVib29rcyBhbmQgd2Vic2l0ZXMgYW5kIGVsZWN0cm9uaWMgYm9va3MuIAoKRmlyc3QsIGRvd25sb2FkIHRoZSBsYXRlc3QgdmVyc2lvbiBvZiBSIGZyb20gW2hlcmVdKGh0dHA6Ly9jcmFuLnJzdHVkaW8uY29tLykuIExvb2sgZm9yIGEgbGluZSB0aGF0IHNheXMgUlN0dWRpbyByZXF1aXJlcyB3aXRoIGBoZXJlYCBhdCB0aGUgZW5kLiBOb3RlIHRoYXQgeW91IG11c3QgaW5zdGFsbCBSIGZpcnN0IChhbmQgdGhlbiBSU3R1ZGlvIHByb3ZpZGVzIHRoZSBpbnRlcmZhY2UgdG8gUikuIAoKU2Vjb25kLCBkb3dubG9hZCBhbmQgaW5zdGFsbCB0aGUgUHJldmlldyByZWxlYXNlIG9mIFJTdHVkaW8gZnJvbSBbaGVyZV0oaHR0cHM6Ly93d3cucnN0dWRpby5jb20vcHJvZHVjdHMvcnN0dWRpby9kb3dubG9hZC9wcmV2aWV3LykKCiMjIzYuIEdpdGh1Yi4gCgpTaWduIHVwIGZvciBhIEdpdGh1YiBhY2NvdW50IFtoZXJlXShodHRwczovL2dpdGh1Yi5jb20vKSBhbmQgZG93bmxvYWQgR2l0aHViIERlc2t0b3AgZm9yIHlvdXIgb3BlcmF0aW5nIHN5c3RlbSBhbmQgc2lnbiBpbiB3aXRoIHlvdXIgR2l0aHViIGlkLiBHaXRodWIgaXMgYSBiaXQgbGlrZSBzaGFyaW5nIGZpbGVzIG9uIGRyb3Bib3ggYnV0IG9uIHN0ZXJvaWRzLgoKUGxlYXNlIGVtYWlsIG1lIHlvdXIgR2l0aHViIGlkIHdoZW4geW91IGhhdmUgaXQgYW5kIEkgd2lsbCBhZGQgeW91IGFzIGNvbGxhYm9yYXRvcnMgdG8gdGhlIHByb2plY3QgcmVwb3NpdG9yeS4gCgojIyM3LiBFdmVybm90ZS4gCgpOaWNlIHRvIGhhdmUuIFdlIG9mdGVuIGVuZCB1cCBicm93c2luZyB0aGUgd2ViIHRvIGxvb2sgdGhpbmdzIHVwIGFuZCB3ZSBtaWdodCB3YW50IHRvIHNhdmUgdGhlIHdlYiBsaW5rcyBvciB0aGUgZGF0YSBvbiB0aGUgcGFnZS4gSSB1c2UgYSBmcmVlIEV2ZXJub3RlIGFjY291bnQgd2l0aCBhIGJyb3dzZXIgcGx1Z2luIGZvciBzYXZpbmcgcGFnZXMgYW5kIG5vdGVzLiBJdCBoYXMgc29tZSBsaW1pdGF0aW9ucyBpbiB0ZXJtcyBvZiBleHBvcnRpbmcgZmlsZXMgYnV0IGNhbiBiZSB2ZXJ5IHVzZWZ1bCBmb3Igc2F2aW5nIGZpbGVzIHRvIGxvb2sgdXAgbGF0ZXIuIAoKCgoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQWZyaWNhIFNwZWNpZXMgUmV2aWV3IEluc3RydWN0aW9ucyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBJbnRyb2R1Y3Rpb24KClRoaXMgZG9jdW1lbnQgd2Fsa3MgeW91IHRocm91Z2ggdGhlIHRvb2xzIHdlIG5lZWQgdG8gaW5zdGFsbCBmb3IgdGhlIEFmcmljYSBwcm9qZWN0IHdvcmsuIAojIFNvZnR3YXJlIHdlIHdpbGwgbm9ybWFsbHkgdXNlLiAKCk1ha2Ugc3VyZSB0aGF0IHlvdSBoYXZlIGNvcGllcyBvZiB0aGUgZm9sbG93aW5nIGluc3RhbGxlZC4gCgojIyMgMS4gRXhjZWwKCiMjIyAyLiBDaHJvbWUgd2ViIGJyb3dzZXIgCgpVcCB0byB5b3Ugd2hpY2ggYnJvd3NlciB5b3UgdXNlIGJ1dCBDaHJvbWUgaXMgZ29vZCBmb3IgY29weWluZyBVUkxzLgoKIyMjIDMuICoqVGFibGVhdSBwdWJsaWMgCgpTaWduIHVwIGFuZCBkb3dubG9hZCBpdCBmcm9tIFtoZXJlXShodHRwczovL3B1YmxpYy50YWJsZWF1LmNvbS9zLykKClRoZSBtYWluIHByb2plY3QgdGFibGVhdSB3b3JrYm9va3MgYXJlIFtoZXJlXShodHRwOi8vcHVibGljLnRhYmxlYXUuY29tL3Byb2ZpbGUvcG9sZGhhbSMhLykuIAoKIyMjIDQuIEdlcGhpIDAuOC4yLiAKClRoaXMgaXMgbmV0d29yayB2aXN1YWxpemF0aW9uIHNvZnR3YXJlLiBUaGUgbGF0ZXN0IHZlcnNpb24gaXMgMC45LjEgYnV0IHdlIGFyZSB1c2luZyBhbiBlYXJsaWVyIHZlcnNpb24gMC44LjIuCgpEb3dubG9hZCBpdCBmb3IgZWl0aGVyIFdpbmRvd3Mgb3IgTWFjIGZyb206IAoKW1dpbmRvd3NdKGh0dHBzOi8vZ2l0aHViLmNvbS9nZXBoaS9nZXBoaS9yZWxlYXNlcy9kb3dubG9hZC92MC44LjIvZ2VwaGktMC44LjItYmV0YS5zZXR1cC5leGUpOiBodHRwczovL2dpdGh1Yi5jb20vZ2VwaGkvZ2VwaGkvcmVsZWFzZXMvZG93bmxvYWQvdjAuOC4yL2dlcGhpLTAuOC4yLWJldGEuc2V0dXAuZXhlCgpbTWFjXShodHRwczovL2dpdGh1Yi5jb20vZ2VwaGkvZ2VwaGkvcmVsZWFzZXMvZG93bmxvYWQvdjAuOC4yL2dlcGhpLTAuOC4yLWJldGEuZG1nKTogaHR0cHM6Ly9naXRodWIuY29tL2dlcGhpL2dlcGhpL3JlbGVhc2VzL2Rvd25sb2FkL3YwLjguMi9nZXBoaS0wLjguMi1iZXRhLmRtZwoKR2VwaGkgOC4yIGlzIGZhbW91c2x5IGZydXN0cmF0aW5nIGJlY2F1c2UgaXQgcmVxdWlyZXMgYSBwYXJ0aWN1bGFyIHZlcnNpb24gb2YgSmF2YS4gV2hlbiB5b3Ugb3BlbiBHZXBoaSA4LjIgeW91IHNob3VsZCBzZWUgYSBXZWxjb21lIHBhbmUgYW5kIHRoZW4gYW4gZXhhbXBsZSBuZXR3b3JrLiBJZiBHZXBoaSA4LjIgZG9lcyBub3Qgb3BlbiBvciB5b3Ugc2VlIGEgZ3JleSBwYW5lIHRoZW4geW91IHNob3VsZCBmb2xsb3cgdGhlc2UgW2luc3RydWN0aW9uc10oaHR0cHM6Ly9naXRodWIuY29tL3BvbGRoYW0vb3BlbnNvdXJjZS1wYXRlbnQtYW5hbHl0aWNzL2Jsb2IvbWFzdGVyLzZfd29ya3Nob3BfcHJlc2VudGF0aW9ucy9nZXBoaV9pbnN0YWxsYXRpb24ucGRmKS4gWW91IGNhbiBkb3dubG9hZCB0aGUgaW5zdHJ1Y3Rpb25zIGFzIGEgcGRmIGZpbGUgZnJvbSBbaGVyZV0oaHR0cHM6Ly9naXRodWIuY29tL3BvbGRoYW0vb3BlbnNvdXJjZS1wYXRlbnQtYW5hbHl0aWNzL3Jhdy9tYXN0ZXIvNl93b3Jrc2hvcF9wcmVzZW50YXRpb25zL2dlcGhpX2luc3RhbGxhdGlvbi5wZGYpCgojIyMgNS4gUlN0dWRpby4gCgpXZSB1c2UgUnN0dWRpbyB0byBhY2Nlc3MgQVBJcywgZm9yIGRhdGEgcHJvY2Vzc2luZyBhbmQgZm9yIHB1Ymxpc2hpbmcgcmVzdWx0cy4gVGhlIHJlYXNvbiB3ZSBkbyB0aGlzIGlzIGJlY2F1c2UgaXQgYWxsb3dzIHVzIHRvIHB1Ymxpc2ggaW4gbXVsdGlwbGUgZm9ybWF0cyAoaHRtbCwgd29yZCBhbmQgcGRmKSBhbmQgaXQgaXMgc3VwZXIgY29vbCBmb3IgcXVpY2tseSBwb3N0aW5nIGEgcHJvamVjdCB3ZWJzaXRlIHRvIEdpdGh1YiBhbmQgc28gb24uCgpXZSB3aWxsIHVzZSB0aGUgUHJldmlldyB2ZXJzaW9uIG9mIFJTdHVkaW8gdGhhdCBhbGxvd3MgdXMgdG8gZWFzaWx5IGNyZWF0ZSBub3RlYm9va3MgYW5kIHdlYnNpdGVzIGFuZCBlbGVjdHJvbmljIGJvb2tzLiAKCkZpcnN0LCBkb3dubG9hZCB0aGUgbGF0ZXN0IHZlcnNpb24gb2YgUiBmcm9tIFtoZXJlXShodHRwOi8vY3Jhbi5yc3R1ZGlvLmNvbS8pLiBMb29rIGZvciBhIGxpbmUgdGhhdCBzYXlzIFJTdHVkaW8gcmVxdWlyZXMgd2l0aCBgaGVyZWAgYXQgdGhlIGVuZC4gTm90ZSB0aGF0IHlvdSBtdXN0IGluc3RhbGwgUiBmaXJzdCAoYW5kIHRoZW4gUlN0dWRpbyBwcm92aWRlcyB0aGUgaW50ZXJmYWNlIHRvIFIpLiAKClNlY29uZCwgZG93bmxvYWQgYW5kIGluc3RhbGwgdGhlIFByZXZpZXcgcmVsZWFzZSBvZiBSU3R1ZGlvIGZyb20gW2hlcmVdKGh0dHBzOi8vd3d3LnJzdHVkaW8uY29tL3Byb2R1Y3RzL3JzdHVkaW8vZG93bmxvYWQvcHJldmlldy8pCgpSIGFuZCBSU3R1ZGlvIHdvcmsgdXNpbmcgcGFja2FnZXMuIFRvIGluc3RhbGwgdGhvc2UgcGFja2FnZXMgaW4gdGhlIGBDb25zb2xlYCBjb3B5IGFuZCBwYXN0ZSB0aGUgZm9sbG93aW5nIGNvZGUgYW5kIHRoZW4gaGF2ZSBhIGN1cCBvZiB0ZWEgd2hpbGUgeW91IHdhaXQgZm9yIHRoZSBwYWNrYWdlcyB0byBpbnN0YWxsLiAKCmBgYHtyfQppbnN0YWxsLnBhY2thZ2VzKCJtYWdyaXR0ciIpCmluc3RhbGwucGFja2FnZXMoInBseXIiKQppbnN0YWxsLnBhY2thZ2VzKCJkcGx5ciIpCmluc3RhbGwucGFja2FnZXMoInRpZHlyIikKaW5zdGFsbC5wYWNrYWdlcygic3RyaW5nciIpCmluc3RhbGwucGFja2FnZXMoIkhtaXNjIikKaW5zdGFsbC5wYWNrYWdlcygiaHR0ciIpCmluc3RhbGwucGFja2FnZXMoInJjcm9zc3JlZiIpCmluc3RhbGwucGFja2FnZXMoImZ1bGx0ZXh0IikKaW5zdGFsbC5wYWNrYWdlcygicnBsb3MiKQppbnN0YWxsLnBhY2thZ2VzKCJnZ3Bsb3QyIikKaW5zdGFsbC5wYWNrYWdlcygianNvbmxpdGUiKQppbnN0YWxsLnBhY2thZ2VzKCJrbml0ciIpCmluc3RhbGwucGFja2FnZXMoInJtYXJrZG93biIpCmluc3RhbGwucGFja2FnZXMoInJlYWRyIikKaW5zdGFsbC5wYWNrYWdlcygicGxvdGx5IikKaW5zdGFsbC5wYWNrYWdlcygiZ2dtYXAiKQppbnN0YWxsLnBhY2thZ2VzKCJsZWFmbGV0IikKaW5zdGFsbC5wYWNrYWdlcygiaHR0ciIpCmluc3RhbGwucGFja2FnZXMoImRldnRvb2xzIikKaW5zdGFsbC5wYWNrYWdlcygiYm9va2Rvd24iKQppbnN0YWxsLnBhY2thZ2VzKCJyZWFkeGwiKQppbnN0YWxsLnBhY2thZ2VzKCJSQ3VybCIpCmluc3RhbGwucGFja2FnZXMoInJnYmlmIikKaW5zdGFsbC5wYWNrYWdlcygidGF4aXplIikKYGBgCgojIyMgNi4gR2l0aHViLiAKClNpZ24gdXAgZm9yIGEgR2l0aHViIGFjY291bnQgW2hlcmVdKGh0dHBzOi8vZ2l0aHViLmNvbS8pIGFuZCBkb3dubG9hZCBHaXRodWIgRGVza3RvcCBmb3IgeW91ciBvcGVyYXRpbmcgc3lzdGVtIGFuZCBzaWduIGluIHdpdGggeW91ciBHaXRodWIgaWQuIEdpdGh1YiBpcyBhIGJpdCBsaWtlIHNoYXJpbmcgZmlsZXMgb24gZHJvcGJveCBidXQgb24gc3Rlcm9pZHMuCgpQbGVhc2UgZW1haWwgbWUgeW91ciBHaXRodWIgaWQgd2hlbiB5b3UgaGF2ZSBpdCBhbmQgSSB3aWxsIGFkZCB5b3UgYXMgY29sbGFib3JhdG9ycyB0byB0aGUgcHJvamVjdCByZXBvc2l0b3J5LiAKCiMjIyA3LiBFdmVybm90ZS4gCgpOaWNlIHRvIGhhdmUuIFdlIG9mdGVuIGVuZCB1cCBicm93c2luZyB0aGUgd2ViIHRvIGxvb2sgdGhpbmdzIHVwIGFuZCB3ZSBtaWdodCB3YW50IHRvIHNhdmUgdGhlIHdlYiBsaW5rcyBvciB0aGUgZGF0YSBvbiB0aGUgcGFnZS4gSSB1c2UgYSBmcmVlIEV2ZXJub3RlIGFjY291bnQgd2l0aCBhIGJyb3dzZXIgcGx1Z2luIGZvciBzYXZpbmcgcGFnZXMgYW5kIG5vdGVzLiBJdCBoYXMgc29tZSBsaW1pdGF0aW9ucyBpbiB0ZXJtcyBvZiBleHBvcnRpbmcgZmlsZXMgYnV0IGNhbiBiZSB2ZXJ5IHVzZWZ1bCBmb3Igc2F2aW5nIGZpbGVzIHRvIGxvb2sgdXAgbGF0ZXIuIEdldCBhIGZyZWUgdmVyc2lvbiBbaGVyZV0oaHR0cHM6Ly9ldmVybm90ZS5jb20vP3Zhcj0xKS4gWW91IG1pZ2h0IHdhbnQgdG8gY29uc2lkZXIgb3RoZXIgdG9vbHMgc3VjaCBhcyBab3Rlcm8uIAoKIyMjIDguIE1lbmRlbGV5CgpXZSB3aWxsIG5lZWQgc29tZSBiaWJsaW9ncmFwaGljIHNvZnR3YXJlIGF0IHNvbWUgcG9pbnQgYW5kIE1lbmRlbGV5IGlzIHByZXR0eSBnb29kLiBTaWduIHVwIGZvciBhbiBhY2NvdW50IGFuZCBhbHNvIGRvd25sb2FkIHRoZSBwbHVnaW4gZm9yIHdvcmQuIAoKCgoKCgo=</div>
 
 
 

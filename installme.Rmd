@@ -5,30 +5,36 @@ output: html_notebook
 
 # Introduction
 
-This document walks you through the tools we need and the tasks that we will be performing for the Africa project work. 
-
+This document walks you through the tools we need to install for the Africa project work. 
 # Software we will normally use. 
 
 Make sure that you have copies of the following installed. 
 
-###1. Excel
+### 1. Excel
 
-###2. Chrome web browser 
-Up to you but Chrome is good
+### 2. Chrome web browser 
 
-###3. **Tableau public 
+Up to you which browser you use but Chrome is good for copying URLs.
+
+### 3. **Tableau public 
 
 Sign up and download it from [here](https://public.tableau.com/s/)
 
 The main project tableau workbooks are [here](http://public.tableau.com/profile/poldham#!/). 
 
-###4. Gephi 0.8.2. 
+### 4. Gephi 0.8.2. 
 
-This is network visualization software. The latest version is 0.9.1 but we are using an earlier version 0.8.2.GO HERE. 
+This is network visualization software. The latest version is 0.9.1 but we are using an earlier version 0.8.2.
 
-Gephi 8.2 is famously annoying because it requires a particular version of Java. When you open Gephi 8.2 you should see a Welcome pane and then an example network. If Gephi 8.2 does not open or you see a grey pane then you should follow these [instructions](https://github.com/poldham/opensource-patent-analytics/blob/master/6_workshop_presentations/gephi_installation.pdf). You can download the instructions as a pdf file from [here](https://github.com/poldham/opensource-patent-analytics/raw/master/6_workshop_presentations/gephi_installation.pdf)
+Download it for either Windows or Mac from: 
 
-###5. RStudio. 
+[Windows](https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.setup.exe): https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.setup.exe
+
+[Mac](https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.dmg): https://github.com/gephi/gephi/releases/download/v0.8.2/gephi-0.8.2-beta.dmg
+
+Gephi 8.2 is famously frustrating because it requires a particular version of Java. When you open Gephi 8.2 you should see a Welcome pane and then an example network. If Gephi 8.2 does not open or you see a grey pane then you should follow these [instructions](https://github.com/poldham/opensource-patent-analytics/blob/master/6_workshop_presentations/gephi_installation.pdf). You can download the instructions as a pdf file from [here](https://github.com/poldham/opensource-patent-analytics/raw/master/6_workshop_presentations/gephi_installation.pdf)
+
+### 5. RStudio. 
 
 We use Rstudio to access APIs, for data processing and for publishing results. The reason we do this is because it allows us to publish in multiple formats (html, word and pdf) and it is super cool for quickly posting a project website to Github and so on.
 
@@ -38,15 +44,51 @@ First, download the latest version of R from [here](http://cran.rstudio.com/). L
 
 Second, download and install the Preview release of RStudio from [here](https://www.rstudio.com/products/rstudio/download/preview/)
 
-###6. Github. 
+R and RStudio work using packages. To install those packages in the `Console` copy and paste the following code and then have a cup of tea while you wait for the packages to install. 
+
+```{r}
+install.packages("magrittr")
+install.packages("plyr")
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("stringr")
+install.packages("Hmisc")
+install.packages("httr")
+install.packages("rcrossref")
+install.packages("fulltext")
+install.packages("rplos")
+install.packages("ggplot2")
+install.packages("jsonlite")
+install.packages("knitr")
+install.packages("rmarkdown")
+install.packages("readr")
+install.packages("plotly")
+install.packages("ggmap")
+install.packages("leaflet")
+install.packages("httr")
+install.packages("devtools")
+install.packages("bookdown")
+install.packages("readxl")
+install.packages("RCurl")
+install.packages("rgbif")
+install.packages("taxize")
+```
+
+### 6. Github. 
 
 Sign up for a Github account [here](https://github.com/) and download Github Desktop for your operating system and sign in with your Github id. Github is a bit like sharing files on dropbox but on steroids.
 
 Please email me your Github id when you have it and I will add you as collaborators to the project repository. 
 
-###7. Evernote. 
+### 7. Evernote. 
 
-Nice to have. We often end up browsing the web to look things up and we might want to save the web links or the data on the page. I use a free Evernote account with a browser plugin for saving pages and notes. It has some limitations in terms of exporting files but can be very useful for saving files to look up later. 
+Nice to have. We often end up browsing the web to look things up and we might want to save the web links or the data on the page. I use a free Evernote account with a browser plugin for saving pages and notes. It has some limitations in terms of exporting files but can be very useful for saving files to look up later. Get a free version [here](https://evernote.com/?var=1). You might want to consider other tools such as Zotero. 
+
+### 8. Mendeley
+
+We will need some bibliographic software at some point and Mendeley is pretty good. Sign up for an account and also download the plugin for word. 
+
+
 
 
 
