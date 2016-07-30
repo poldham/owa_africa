@@ -1,0 +1,53 @@
+---
+title: "Africa Species Review Instructions"
+output: html_notebook
+---
+
+# Introduction
+
+This document walks you through the tools we need and the tasks that we will be performing for the Africa project work. 
+
+# Software we will normally use. 
+
+Make sure that you have copies of the following installed. 
+
+###1. Excel
+
+###2. Chrome web browser 
+Up to you but Chrome is good
+
+###3. **Tableau public 
+
+Sign up and download it from [here](https://public.tableau.com/s/)
+
+The main project tableau workbooks are [here](http://public.tableau.com/profile/poldham#!/). 
+
+###4. Gephi 0.8.2. 
+
+This is network visualization software. The latest version is 0.9.1 but we are using an earlier version 0.8.2.GO HERE. 
+
+Gephi 8.2 is famously annoying because it requires a particular version of Java. When you open Gephi 8.2 you should see a Welcome pane and then an example network. If Gephi 8.2 does not open or you see a grey pane then you should follow these [instructions](https://github.com/poldham/opensource-patent-analytics/blob/master/6_workshop_presentations/gephi_installation.pdf). You can download the instructions as a pdf file from [here](https://github.com/poldham/opensource-patent-analytics/raw/master/6_workshop_presentations/gephi_installation.pdf)
+
+###5. RStudio. 
+
+We use Rstudio to access APIs, for data processing and for publishing results. The reason we do this is because it allows us to publish in multiple formats (html, word and pdf) and it is super cool for quickly posting a project website to Github and so on.
+
+We will use the Preview version of RStudio that allows us to easily create notebooks and websites and electronic books. 
+
+First, download the latest version of R from [here](http://cran.rstudio.com/). Look for a line that says RStudio requires with `here` at the end. Note that you must install R first (and then RStudio provides the interface to R). 
+
+Second, download and install the Preview release of RStudio from [here](https://www.rstudio.com/products/rstudio/download/preview/)
+
+###6. Github. 
+
+Sign up for a Github account [here](https://github.com/) and download Github Desktop for your operating system and sign in with your Github id. Github is a bit like sharing files on dropbox but on steroids.
+
+Please email me your Github id when you have it and I will add you as collaborators to the project repository. 
+
+###7. Evernote. 
+
+Nice to have. We often end up browsing the web to look things up and we might want to save the web links or the data on the page. I use a free Evernote account with a browser plugin for saving pages and notes. It has some limitations in terms of exporting files but can be very useful for saving files to look up later. 
+
+
+
+
