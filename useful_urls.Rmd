@@ -1,0 +1,52 @@
+---
+title: "useful urls"
+author: "Paul Oldham"
+date: "30 July 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## URLs used in Tableau to look up different resources
+
+Note that 
+
+
+Patent data
+
+The lens
+
+https://www.lens.org/lens/search?q=%22<Species>%22
+
+Title, Abstract or Claims search
+
+raw example
+https://www.lens.org/lens/search?q=%28title%3A%28%22Marrubium+vulgare%22%29+%7C%7C+abstract%3A%28%22Marrubium+vulgare%22%29+%7C%7C+claims%3A%28%22Marrubium+vulgare%22%29%29&l=en
+
+For Tableau
+https://www.lens.org/lens/search?q=%28title%3A%28%22<Species>%22%29+%7C%7C+abstract%3A%28%22<Species>%22%29+%7C%7C+claims%3A%28%22<Species>%22%29%29&l=en
+
+Google
+
+base url = https://www.google.co.uk/search?q=
+
+data field in Tableau = turn the species into the query
+https://www.google.co.uk/search?q=<Species>
+
+To add a country name use
+
+https://www.google.co.uk/search?q=<Species>+Algeria
+
+Encyclopedia of Life
+
+base url = http://www.eol.org/search?q=
+http://www.eol.org/search?q=<Species>&search=Go
+
+GBIF
+base url = http://www.gbif.org/species/search?q=
+http://www.gbif.org/species/search?q=<Species>
+
+
+
