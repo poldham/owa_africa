@@ -2,7 +2,9 @@
 title: "What We Want"
 author: "Paul Oldham"
 date: "31 July 2016"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}

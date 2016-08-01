@@ -1,7 +1,15 @@
 ---
-title: "Africa Species Review Instructions"
-output: html_notebook
+title: "installme"
+author: "Paul Oldham"
+date: "1 August 2016"
+output:
+  word_document: default
+  html_document: default
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 # Introduction
 
@@ -47,7 +55,7 @@ Second, download and install the Preview release of RStudio from [here](https://
 
 R and RStudio work using packages. To install those packages in the `Console` copy and paste the following code and then have a cup of tea while you wait for the packages to install. 
 
-```{r}
+```{r eval=FALSE}
 install.packages("magrittr")
 install.packages("plyr")
 install.packages("dplyr")
