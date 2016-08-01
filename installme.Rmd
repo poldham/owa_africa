@@ -6,6 +6,7 @@ output: html_notebook
 # Introduction
 
 This document walks you through the tools we need to install for the Africa project work. 
+
 # Software we will normally use. 
 
 Make sure that you have copies of the following installed. 

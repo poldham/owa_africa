@@ -13,39 +13,67 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Note that 
 
-
-Patent data
+###Patent data
 
 The lens
 
+base url https://www.lens.org/lens/search?q=
+
 https://www.lens.org/lens/search?q=%22<Species>%22
 
-Title, Abstract or Claims search
+Title, Abstract or Claims search:
 
 raw example
+
 https://www.lens.org/lens/search?q=%28title%3A%28%22Marrubium+vulgare%22%29+%7C%7C+abstract%3A%28%22Marrubium+vulgare%22%29+%7C%7C+claims%3A%28%22Marrubium+vulgare%22%29%29&l=en
 
 For Tableau
+
 https://www.lens.org/lens/search?q=%28title%3A%28%22<Species>%22%29+%7C%7C+abstract%3A%28%22<Species>%22%29+%7C%7C+claims%3A%28%22<Species>%22%29%29&l=en
 
-Google
+To restrict further to family members:
+
+https://www.lens.org/lens/search?q=%28title%3A%28%22<Species>%22%29+%7C%7C+abstract%3A%28%22<Species>%22%29+%7C%7C+claims%3A%28%22<Species>%22%29%29&l=en&p=0&f=true
+
+The key part of the url here is: &p=0&f=true
+
+With the country name in the full text:
+
+https://www.lens.org/lens/search?q=%28title%3A%28%22Pistacia+lentiscus%22%29+%7C%7C+abstract%3A%28%22Pistacia+lentiscus%22%29+%7C%7C+claims%3A%28%22Pistacia+lentiscus%22%29%29+%26%26+%22Algeria%22&l=en
+
+Co-occurrence of a species name with a country name in the full text. 
+
+https://www.lens.org/lens/search?q=%22Pistacia+lentiscus%22+%26%26+%22Algeria%22&l=en
+
+https://www.lens.org/lens/search?n=10&q=%22Lepidium+meyenii%22+%26%26+%22Peru%22&l=en&p=0
+
+https://www.lens.org/lens/search?n=10&q=%22Lepidium+meyenii%22+%26%26+%22Peru%22&l=en&p=0&f=true
+
+###Google
 
 base url = https://www.google.co.uk/search?q=
 
 data field in Tableau = turn the species into the query
+
 https://www.google.co.uk/search?q=<Species>
 
 To add a country name use
 
-https://www.google.co.uk/search?q=<Species>+Algeria
+https://www.google.co.uk/search?q=<Species>+Algeria 
 
-Encyclopedia of Life
+https://www.lens.org/lens/search?n=10&q=%22Lepidium+meyenii%22+%26%26+%22Peru%22&l=en&p=0
+
+###Encyclopedia of Life
 
 base url = http://www.eol.org/search?q=
 http://www.eol.org/search?q=<Species>&search=Go
 
-GBIF
+###GBIF
+
+Particularly useful for downloading geographic data. 
+
 base url = http://www.gbif.org/species/search?q=
+
 http://www.gbif.org/species/search?q=<Species>
 
 

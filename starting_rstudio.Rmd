@@ -1,0 +1,64 @@
+---
+title: "Getting Started with RStudio"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+### Introduction:
+
+We use RStudio because it is very very easy to create documents in multiple formats (html, word and pdf) and to publish them online. RStudio creates rmarkdown documents that use very simple formatting as below. 
+
+###Getting Started
+
+When we open RStudio we see four panes. 
+
+1. This pane (used for writing stuff in)
+2. A console (used for running code)
+3. A pane on the Top Right (this shows us what objects are in the environment)
+4. A pane on the lower right showing Files, Packages and other information. 
+
+For this project we mainly need to use the writing pane and the Files pane (to find files)
+
+## Working with Projects
+
+RStudio works with projects (see the blue R sign in the top right). We organise the data into projects because it keeps all of the files together for future work. To create a new project click on the top right button and create a new project. 
+
+### Opening a project
+
+Download the Algeria project from here
+
+## Opening a File 
+
+Under File choose New File > Rmarkdown. 
+
+Markdown is a very simple writing format that allows us to concentrate on the content. 
+
+##Formatting 
+
+### Headings
+
+For a heading use the hash mark
+
+# One
+## Two
+### Three
+
+This is all we need. 
+
+### Images
+
+For images. Note that we need to use the full file path for an image to display. 
+
+![image_name](/Users/pauloldham17inch/Desktop/wipo-analytics.github.io/images/plotlyfigs/fig1_plotly.png)
+
+### URL hyperlinks
+
+[link](https://www.google.co.uk)
+
+Italics are simply created using `*` on either side of the word *italics*
+
+
+
+

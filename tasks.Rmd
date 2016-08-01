@@ -1,0 +1,24 @@
+---
+title: "What We Want"
+author: "Paul Oldham"
+date: "31 July 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Basic information
+
+1. What is this species
+
+2. Where in the world is it found, 
+
+3. Are there any known traditional uses of the species
+
+4. The number of patent documents mentioning the species in the full text (counts of familes and publications from the Lens patent databse)
+
+5. The number of patent documents that mention the species in the title, abstract or claims (TAC for short). Counts of publications and 
+
+6. Tne m
