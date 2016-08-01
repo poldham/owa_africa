@@ -11,16 +11,75 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Basic information
+## Basic information about a species
 
-1. What is this species
+Prepare a basic summary about a species in the list. Provide references with hyperlinks (see notes on using markdown in RStudio). We only need a short paragraph or two of information to paint a portrait of the species. 
 
-2. Where in the world is it found, 
+1. What is this species? (We often know the answer to that question but useful to check we have got that right)
 
-3. Are there any known traditional uses of the species
+2. Where in the world is it found? (is it only found in one (endemic) or a limited number of countries or is it widely distributed)
 
-4. The number of patent documents mentioning the species in the full text (counts of familes and publications from the Lens patent databse)
+3. Are there any known traditional uses of the species?
 
-5. The number of patent documents that mention the species in the title, abstract or claims (TAC for short). Counts of publications and 
+4. Conservation status. Is the species on the [IUCN Redlist](http://www.iucnredlist.org) or is it otherwise regarded as under threat (give sources)
 
-6. Tne m
+## Basic Information on a species in Patent Documents (using the [Lens](https://www.lens.org/lens/) as the main patent database)
+
+5. The number of patent documents mentioning the species in the full text (counts of familes and publications from the Lens patent databse)
+
+6. The number of patent documents that mention the species in the title, abstract or claims (TAC for short). Counts of publications and counts of families. 
+
+7. Identify and make notes on documents that contain references to the species in the title, abstracts or claims AND/OR that make reference to the country we are focusing on as the source. 
+
+## Detailed information on the species in Patent Documents
+
+In reviewing patent documents in the [Lens](https://www.lens.org/lens/) patent database (sign up for a free account) we want to know: 
+
+***a) Is the species actually used in (part of) an invention?*** 
+
+You normally need to read the claims for this. That is, is there an extract, a compound, a DNA or Amino acid sequence from the species that is used in the invention or is it simply part of a list of potential species that can be used (sometimes mentioned as part of a genus or a family of organism so watch out for that)
+
+***b) Does the applicant mention the country and if the material was collected in the country?*** 
+
+If the country is mentioned is it mentioned as the specific place material was collected from? Or, is it a general reference or reference to one or more countries that it might be obtained from. 
+
+If a date is given for the collection then make sure to note that down. 
+
+***c) Are any traditional uses of a species mentioned by an applicant?***
+
+If so what are they?
+
+***d) Are any indigenous peoples or local communities mentioned (either as sources or in connection with traditional uses).*** 
+
+If so, who are they? Is the reference general (such and such a people use this for treating colds etc) or specific e.g. The Berber of x have been using this for thousands of years to treat x. Or references to specific collection of material among indigenous peoples or local communities (we went to x community and collected material).
+
+Make sure to note down those details if they are present.
+
+***d) What is the techology area for the claimed invention?*** 
+
+This can sometimes involve more than one term to describe. We might have, pharmacaeutical and cosmetics (for cosmetics).  Generally we have the following broad categories 
+
+1. Agriculture
+2. Beverages
+3. Biotechnology (try to identify which area as often quite broad)
+4. Bioremediation
+5. Bionanotechnology (rare)
+6. Cosmetics
+7. Foodstuff (food product)
+8. Genome engineering/genome editing (unlikely but keep an eye out for this)
+9. Perfumes
+10. Pesticide or herbicide (sometime an extract or compound is used from a species, most times it is a claimed application to a species as a pest or weed)
+11. Pharmaceuticals (anti-cancer, anti-diabetes, anti-viral etc)
+12. (note down what the applicants say it is for, could be for dyes, printing, baking, construction or a whole bunch of other things)
+13. Synthetic biology
+
+***e) Who is making the claims to an invention?***
+
+The document will record the applicant name but we often also want to know is this:
+
+1. A company
+2. A public research organisation (a university)
+3. A hospital or medical institute (may be public or private)
+4. A government ministry (e.g. health, environment, agriculture, army, navy etc... normally says ministry or govt)
+
+Note that applicants on a patent document may fall into multiple categories and in some cases it is hard to work out. Write down the choice next to the column with the entry. 
